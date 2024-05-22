@@ -64,10 +64,10 @@ object JVMConcurrencyProblems {
   /**
    * Part 3 : Exercise 1
    */
-  def exercise1_inceptionThread(maxThreads: Int, i: Int = 1): Thread =
+  def exercise_inceptionThread(maxThreads: Int, i: Int = 1): Thread =
     new Thread(() => {
       if (i < maxThreads) {
-        val newThread = exercise1_inceptionThread(maxThreads, i + 1)
+        val newThread = exercise_inceptionThread(maxThreads, i + 1)
         newThread.start()
         newThread.join()
       }
@@ -75,11 +75,9 @@ object JVMConcurrencyProblems {
     })
 
 
-
-
   def main(args: Array[String]): Unit = {
-//    demoBankingProblem()
+    //    demoBankingProblem()
 
-    exercise1_inceptionThread(50).start()
+    exercise_inceptionThread(50).start()
   }
 }
