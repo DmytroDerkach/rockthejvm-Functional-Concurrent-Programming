@@ -1,4 +1,4 @@
-package lectures.concurrency
+package lectures.part3concurrency
 
 import java.util.concurrent.Executors
 import scala.concurrent.{ExecutionContext, Future, Promise}

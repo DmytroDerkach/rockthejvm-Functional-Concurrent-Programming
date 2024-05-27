@@ -1,4 +1,4 @@
-package lectures.concurrency
+package lectures.part3concurrency
 
 object JVMConcurrencyProblems {
 

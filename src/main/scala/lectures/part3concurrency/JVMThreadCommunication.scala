@@ -1,4 +1,4 @@
-package lectures.concurrency
+package lectures.part3concurrency
 
 import scala.collection.mutable
 import scala.util.Random
